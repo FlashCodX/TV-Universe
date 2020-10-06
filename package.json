@@ -1,7 +1,7 @@
 {
   "name": "tvuniverse",
   "version": "0.1.0",
-  "homepage": "https://FlashCodX.github.io/Tv-universe",
+  "homepage": "https://FlashCodX.github.io/tv",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",

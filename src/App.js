@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import {useDataValue} from "./Data/DataProvider";
 import Search from "./components/Search";
 import SlashScreen from "./SlashScreen";
+
 let interval
 let progressI
 export default function App() {
