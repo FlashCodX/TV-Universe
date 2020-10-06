@@ -1,11 +1,11 @@
-# ![preview](src/assets/icon.PNG) TV UNIVERSE
+# ![preview](src/assets/icon.png) TV UNIVERSE
 
 
 ![preview](src/assets/screenshot.PNG)
 > Check it out:  [https://flashcodx.github.io/Tvuniverse/](https://flashcodx.github.io/Tvuniverse/)
 
 # Features!
-  - Shows most popular tv shows and movies.
+  - Shows the most popular tv shows and movies.
   - Has a tv show/movie search option
 
 ## Tech
