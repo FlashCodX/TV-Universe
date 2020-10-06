@@ -1,6 +1,6 @@
 # ![preview](src/assets/icon.png) TV UNIVERSE
 
-![preview](src/assets/screenshot.png)
+![preview](src/assets/screenshot.PNG)
 > Check it out:  [https://flashcodx.github.io/tvuniverse/](https://flashcodx.github.io/tvuniverse/)
 
 # Features!
