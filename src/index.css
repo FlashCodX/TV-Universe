@@ -1,13 +1,230 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    background: #141414;
+    color: white;
+    position: relative;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#splash {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash > section {
+    width: 420px;
+    margin-top: 30px;
+    position: relative;
+    max-width: 100%;
+    height: 4px;
+    background: white;
+}
+
+#splash > section > div {
+    width: 50%;
+    background: darkgreen;
+    height: inherit;
+}
+
+#splash img {
+    object-fit: contain;
+}
+
+#splash > span {
+    margin-top: 15px;
+    font-weight: 900;
+}
+
+header {
+    font-weight: 900;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    margin: 35px 60px 30px;
+    padding: 10px 20px;
+    background: #222222;
+}
+
+
+header > section > * {
+    margin: 0 10px;
+    cursor: pointer;
+    width: 20px !important;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: black;
+}
+
+nav > div {
+    display: flex;
+    cursor: pointer;
+    font-weight: 900;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+}
+
+nav img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+nav input {
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    width: 130px;
+    background: black;
+    font-size: 15px;
+    padding: 5px 0;
+    margin-right: 30px;
+}
+
+nav input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.App > section > .media {
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    row-gap: 20px;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+    justify-items: center;
+}
+
+.App > section > .media::-webkit-scrollbar {
+    display: none;
+}
+
+.App > section > .media > div {
+    position: relative;
+    margin: 0 20px;
+    border: 2px solid white;
+}
+
+
+
+.App > section > .media > div > .overlay {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: white;
+    color: black;
+    height: 0;
+    text-align: center;
+}
+
+.App > section > .media > div > * {
+    margin: 5px;
+}
+
+
+.App > section > .media > div > section {
+    display: flex;
+    margin-top: -5px;
+
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.App > section > .media > div > section > section{
+    display: flex;
+    align-items: center;
+}
+.App > section > .media > div > section  > span{
+    text-indent:2px;
+    font-size: 12px;
+}
+
+.App > section > .media > div > section > section > svg{
+    width: 15px;
+    color: yellow;
+    margin-right: 10px;
+}
+.App > section > .media > div > section > section > div{
+    font-size: 12px;
+    margin-right: 4px;
+}
+.App > section > section .overlay > h1 {
+    margin: 5px;
+    text-transform: uppercase;
+    text-indent: 5px;
+}
+
+.App > section > section .overlay > div {
+    font-size: 13px;
+    padding: 0 10px;
+    scrollbar-width: none;
+
+    height: fit-content;
+    max-height: 130px;
+    overflow: auto;
+    text-align: left;
+}
+
+
+
+.App > section > section .overlay > div::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    visibility: hidden;
+}
+
+.App > section > section > div > img {
+    width: 200px;
+}
+
+
+.slide-in{
+    animation: overview .1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes overview {
+    100%{
+        opacity: 1;
+        visibility: visible;
+        height: 170px;
+    }
 }
