@@ -2,7 +2,7 @@
 
 
 ![preview](src/assets/screenshot.PNG)
-> Check it out:  [https://flashcodx.github.io/Tvuniverse/](https://flashcodx.github.io/Tvuniverse/)
+> Check it out:  [https://flashcodx.github.io/tv-universe/](https://flashcodx.github.io/tv-universe/)
 
 # Features!
   - Shows the most popular tv shows and movies.
